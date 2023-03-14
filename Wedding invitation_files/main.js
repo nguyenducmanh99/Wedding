@@ -14,6 +14,48 @@
 13. website loader js
 14. fat-nav js
 */
+try {
+    timer("clock", "04 2, 2023 11:00:00")
+} catch (error) {
+    console.log(error)
+}
+
+function timer(clockID, exp_date) {
+    // Set the date we're counting down to
+    var countDownDate = new Date(exp_date).getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        //add a zero (0) if value less then 9
+        var days = (days < 10) ? '0' + days : days;
+        var hours = (hours < 10) ? '0' + hours : hours;
+        var minutes = (minutes < 10) ? '0' + minutes : minutes;
+        var seconds = (seconds < 10) ? '0' + seconds : seconds;
+
+        // Output the result in an element with id="demo"
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("mins").innerHTML = minutes;
+        document.getElementById("secs").innerHTML = seconds;
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById(clockID).innerHTML = "EXPIRED";
+        }
+    }, 1000);
+}
 
 jQuery(function () {
 
@@ -149,22 +191,22 @@ jQuery(function () {
     /*  For Expired Timer
     /*===================================================================================*/
     // clock - index1.html
-    if (jQuery('#clock').length > 0) {
-        var expireDate = jQuery('#clock').attr('data-date');
-        // console.log("expireDate", expireDate)
-        if (expireDate) {
-            var expireDateVal = expireDate;
-        } else {
-            const currentDate = new Date();
-            var currentMonth = currentDate.getMonth() + 1;
-            var currentDay = currentDate.getDate();
-            var currentYear = currentDate.getFullYear();
-            var expireDateVal = currentMonth + ' ' + currentDay + ', ' + currentYear + ' ' + '23:59:59';
-        }
-        var exp_date = "04 2, 2023 11:00:00";
-        // console.log("exp_date", exp_date)
-        timer("clock", exp_date);
-    }
+    // if (jQuery('#clock').length > 0) {
+    //     var expireDate = jQuery('#clock').attr('data-date');
+    //     // console.log("expireDate", expireDate)
+    //     if (expireDate) {
+    //         var expireDateVal = expireDate;
+    //     } else {
+    //         const currentDate = new Date();
+    //         var currentMonth = currentDate.getMonth() + 1;
+    //         var currentDay = currentDate.getDate();
+    //         var currentYear = currentDate.getFullYear();
+    //         var expireDateVal = currentMonth + ' ' + currentDay + ', ' + currentYear + ' ' + '23:59:59';
+    //     }
+    //     var exp_date = "04 2, 2023 11:00:00";
+    //     // console.log("exp_date", exp_date)
+    //     timer("clock", exp_date);
+    // }
 
     function timer(clockID, exp_date) {
         // Set the date we're counting down to
