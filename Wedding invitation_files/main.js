@@ -44,12 +44,12 @@ function timer(clockID, exp_date) {
         var seconds = (seconds < 10) ? '0' + seconds : seconds;
 
         // Output the result in an element with id="demo"
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("days").dataset.number = days;
-        document.getElementById("days").innerHTML = document.getElementById("days").getAttribute('data-number');
-        document.getElementById("hours").innerHTML = hours;
-        document.getElementById("mins").innerHTML = minutes;
-        document.getElementById("secs").innerHTML = seconds;
+        // document.getElementById("days").innerHTML = days;
+        // document.getElementById("days").dataset.number = days;
+        document.getElementById("days").textContent = days
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("mins").textContent = minutes;
+        document.getElementById("secs").textContent = seconds;
 
         // If the count down is over, write some text
         if (distance < 0) {
