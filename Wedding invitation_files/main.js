@@ -45,6 +45,8 @@ function timer(clockID, exp_date) {
 
         // Output the result in an element with id="demo"
         document.getElementById("days").innerHTML = days;
+        document.getElementById("days").dataset.number = days;
+        document.getElementById("days").innerHTML = document.getElementById("days").getAttribute('data-number');
         document.getElementById("hours").innerHTML = hours;
         document.getElementById("mins").innerHTML = minutes;
         document.getElementById("secs").innerHTML = seconds;
