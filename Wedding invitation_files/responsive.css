@@ -483,10 +483,9 @@
 		height: inherit;
 	}
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
 	.banner-container {
-		background-position-x: -165px;
-		padding: 300px 0px 10px 0px;
+		padding: 500px 0px 10px 0px;
 	}
 	.font-champion {
 		font-size: 25px !important;
