@@ -517,7 +517,7 @@
 		margin: 0 12px;
 	}
 }
-@media only screen and (min-width: 420px) and (max-width: 500px)  {
+/* @media only screen and (min-width: 420px) and (max-width: 500px)  {
 	.banner-container {
 		background-position-x: -350px !important;
 	}
@@ -536,7 +536,7 @@
 	.banner-container {
 		background-position-x: -400px !important;
 	}
-  }
+} */
 /*---------------------*/
 /* 4.banner bottom css */
 /*---------------------*/
