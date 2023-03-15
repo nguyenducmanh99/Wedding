@@ -500,6 +500,43 @@
 		margin: 0 12px;
 	}
 }
+@media screen and (min-width: 420px) and (max-width: 600px) {
+	.banner-container {
+		padding: 500px 0px 10px 0px;
+	}
+	.font-champion {
+		font-size: 25px !important;
+	}
+    .first-decor {
+		display: none;
+	}
+	.main-text {
+		flex-direction: row;
+	}
+	.main-text .and {
+		margin: 0 12px;
+	}
+}
+@media only screen and (min-width: 400px) and (max-width: 420px)  {
+	.banner-container {
+		background-position-x: -370px;
+	}
+}
+@media only screen and (min-width: 420px) and (max-width: 500px)  {
+	.banner-container {
+		background-position-x: -350px;
+	}
+}
+@media only screen and (min-width: 375px) and (max-width: 400px)  {
+	.banner-container {
+		background-position-x: -390px;
+	}
+  }
+@media only screen and (min-width: 300px) and (max-width: 375px)  {
+	.banner-container {
+		background-position-x: -400px;
+	}
+  }
 /*---------------------*/
 /* 4.banner bottom css */
 /*---------------------*/
