@@ -1133,6 +1133,9 @@ form label {
     padding-left: 0;
     text-align: center;
   }
+  .title-box {
+    margin-top: 10px;
+  }
 }
 
 .feature-center {
