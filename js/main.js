@@ -459,15 +459,19 @@ jQuery(function () {
     /*===================================================================================*/
   if (jQuery(".wow").length > 0) {
     jQuery(function () {
-      var wow = new WOW({
-        boxClass: "wow",
-        animateClass: "animated",
-        offset: 0,
-        mobile: true,
-        live: true,
-        scrollContainer: null,
-      });
-      wow.init();
+      try {
+        var wow = new WOW({
+          boxClass: "wow",
+          animateClass: "animated",
+          offset: 0,
+          mobile: true,
+          live: true,
+          scrollContainer: null,
+        });
+        wow.init();
+      }catch(error) {
+
+      }
     });
   }
 });

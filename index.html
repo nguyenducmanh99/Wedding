@@ -49,7 +49,10 @@
     <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -144,7 +147,7 @@
                 </div>
             </div>
         </div>
-        
+
         <section section-scroll="2" class="event-area">
             <div class="container" style="padding-right: 15px;
 				padding-left: 15px;
@@ -172,7 +175,7 @@
                             <h2>Main Ceremony</h2>
                             <h1>9:00 am</h1>
                             <span>St. Bình Minh<br>Nam Trực, Nam Định, VN.</span>
-                            <p>Xóm Tây Hành Quần, Xã Bình Minh, Huyện Nam Trực, Tỉnh Nam Định</p>
+                            <p class="address">Xóm Tây Hành Quần, Xã Bình Minh, Huyện Nam Trực, Tỉnh Nam Định</p>
                             <div class="clearfix"></div>
                             <a style="transition: all 0.5s;" class="btgbtn" href="https://www.google.com/maps/place/20%C2%B019'43.6%22N+106%C2%B013'13.9%22E/@20.328777,106.220533,17z/data=!3m1!4b1!4m4!3m3!8m2!3d20.328777!4d106.220533">Open Map</a>
                         </div>
@@ -187,7 +190,7 @@
                             <h2 class="title-box">Wedding Party</h2>
                             <h1>11:00 am</h1>
                             <span>St. Sài Đồng<br>Long Biên, Hà Nội, VN.</span>
-                            <p>Nhà số 1 Ngõ 114 Phố Sài Đồng Quận Long Biên Thành Phố Hà Nội</p>
+                            <p class="address">Nhà số 1 Ngõ 114 Phố Sài Đồng Quận Long Biên Thành Phố Hà Nội</p>
                             <div class="clearfix"></div>
                             <a style="text-decoration: none;" class="btgbtn" href="https://www.google.com/maps/place/21%C2%B002'10.6%22N+105%C2%B054'42.8%22E/@21.036264,105.91188,17z/data=!3m1!4b1!4m4!3m3!8m2!3d21.036264!4d105.91188">Open Map</a>
                         </div>
@@ -304,7 +307,7 @@
                 </div>
                 <div class="row animate-box">
                     <div class="col-md-10 col-md-offset-1">
-                        <form class="form-inline" id="form-submit" onsubmit="submitFunction()">
+                        <form class="form-inline" id="form-submit">
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <label for="name" class="sr-only">Name</label>
@@ -314,7 +317,7 @@
                             <div class="col-md-6 col-sm-6">
                                 <div class="form-group">
                                     <label for="text" class="sr-only">Best wishes</label>
-                                    <input type="text" class="form-control" id="text" name="text" placeholder="Best wishes" maxlength="38"> 
+                                    <input type="text" class="form-control" id="text" name="text" placeholder="Best wishes" maxlength="38">
                                 </div>
                             </div>
                             <!-- <div class="col-md-12 col-sm-12">
@@ -325,17 +328,18 @@
                             </div> -->
                             <div class="col-md-12 col-sm-12 flex-column" style="font-size: 20px; color: floralwhite; padding-top: 3%;">
                                 <label class="text-center">Will you come and have fun with us?</label>
-        
+
                                 <label class="label-input text-center">
                                     <input type="radio" id="radio01" name="attend" value="1" checked="">
                                     <span>Yes, I will attend</span>
-                                </label>   
+                                </label>
                                 <label class="label-input text-center">
                                     <input type="radio" id="radio02" name="attend" value="0">
                                     <span>Sorry, I can't attend</span>
                                 </label>
                                 <br>
                             </div>
+
                             <div class="col-md-4 col-sm-4">
                             </div>
                             <div class="col-md-4 col-sm-4">
@@ -360,7 +364,7 @@
                     <div class="col-md-6 animate-box">
                         <div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">
                             <a class="popup-vimeo" style="background-image: url(images/qrmanh.jpg);">
-                               
+
                             </a>
                             <div class="overlay"></div>
                         </div>
@@ -368,8 +372,8 @@
 
                     <div class="col-md-6 animate-box">
                         <div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">
-                            <a class="popup-vimeo" style="background-image: url(images/qrmanh.jpg);"> 
-                               
+                            <a class="popup-vimeo" style="background-image: url(images/qrmanh.jpg);">
+
                             </a>
                             <div class="overlay"></div>
                         </div>
@@ -382,6 +386,28 @@
 
     <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+    <button type="button" id="btn-click" class="btn btn-primary" style="display: none;" data-bs-toggle="modal" data-bs-target="#modal">
+        Launch demo modal
+      </button>
+    <div class="modal" tabindex="-1" id="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Notification 
+             </h4>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfUW1pWZxuc63TsAUnckYPU_p6mDtMO5o9EXZDJfA&s" class="success-icon"> </img>
+              <button type="button" class="btn-close" onclick="handleClose(event)" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>You have successfully submitted !</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="handleClose(event)">Close</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="handleClose(event)">Oke</button>
+            </div>
+          </div>
+        </div>
     </div>
 
     <!-- jQuery -->
@@ -424,41 +450,51 @@
             month: d.getMonth() + 1,
             day: d.getDate(),
             enableUtc: false
-        }); 
-    function submitFunction(event) {
- /* Submit Form */
-     event.preventDefault()
-     const form = {
-     name: document.getElementById("name")?.value, 
-     text: document.getElementById("text")?.value
-    }
-     const submitButton = document.getElementById("submit")
-     const scriptURL = 'https://script.google.com/macros/s/AKfycbxWSve9cGR-DCzSx3_8USwrhVKSdDNKov4dzh9NkBb2pQ0Y6kqCmp6zGhBn5zpA_xgkdg/exec'
-     submitButton.disabled = true
-     for(var key in form) {
-        if(form[key] === "") {
-           delete form[key]
+        });
+        function handleClose(event) {
+            event.preventDefault();
+            const submitButton = document.getElementById("submit");
+            document.getElementById("name").value = "";
+            document.getElementById("text").value = "";
+            document.getElementById("radio01").click();
+            submitButton.disabled = false
         }
-    }
-    if(Object.keys(form).length !== 0) {
-        form.join = document.getElementById("radio01").checked ? "Yes" : "No"
-        const jqxhr = $.ajax({
-                url: scriptURL,
-                method: "POST",
-                dataType: "json",
-                data: form
-            }).success(
-                  alert("Success!")
-            )
-    } else {
-        alert("Please enter your name")
-        document.getElementById("name")?.focus();
-    }
-    submitButton.disabled = false      
-    }
+        function submitFunction(event) {
+            /* Submit Form */
+            event.preventDefault()
+            const form = {
+                name: document.getElementById("name")?.value,
+                text: document.getElementById("text")?.value
+            };
+            const submitButton = document.getElementById("submit")
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxWSve9cGR-DCzSx3_8USwrhVKSdDNKov4dzh9NkBb2pQ0Y6kqCmp6zGhBn5zpA_xgkdg/exec'
+            submitButton.disabled = true
+            for (var key in form) {
+                if (form[key] === "") {
+                    delete form[key]
+                }
+            }
+            if (Object.keys(form).length !== 0) {
+                form.join = document.getElementById("radio01").checked ? "Yes" : "No"
+                const jqxhr = $.ajax({
+                    url: scriptURL,
+                    method: "POST",
+                    dataType: "json",
+                    data: form
+                }).success(
+                 () => {
+                    document.getElementById("btn-click").click()
+                    console.log("oke");
+                 }
+                )
+            } else {
+                document.getElementById("name")?.focus();
+                setTimeout(() => submitButton.disabled = false, 2000)
+            }
 
+
+        }
     </script>
-
 </body>
 
 </html>

@@ -481,6 +481,20 @@ background-position:center !important;
   }
   .simply-countdown {
     position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    bottom: 0%;
+    margin-bottom: 0 !important
+  }
+  .simply-seconds-section {
+    display: none !important;
+  }
+  .mt-50 {
+    margin-top: 2rem !important;
+  }
+  .embename {
+    margin-bottom: 20px;
   }
 }
 .timeline > li {
@@ -1135,10 +1149,14 @@ form label {
     text-align: center;
   }
   .title-box {
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   figure > img {
     margin-top: 30px;
+  }
+  .address {
+    font-size: 14px;
   }
 }
 
@@ -2099,7 +2117,18 @@ form label {
   flex-wrap: wrap;
   box-sizing: border-box;
 }
-
+.modal-dialog {
+    width: 80% !important;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+}
+.success-icon {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
 .weddio-content h5 {
   color: #fa6f6f;
   font-size: 1.8rem;
