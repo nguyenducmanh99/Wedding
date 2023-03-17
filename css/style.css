@@ -1914,7 +1914,9 @@ form label {
   font-weight: 400;
   color: #111111;
   padding: 0 30px;
+  animation: blink 2s linear infinite;
 }
+@keyframes blink { 50% { border-color: gray; }  }
 
 .event-infobox span {
   display: block;
@@ -1999,4 +2001,130 @@ form label {
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 5% !important;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#blink {
+  animation: blinkMe 3s linear infinite;
+}
+
+@keyframes blinkMe {
+  0% {
+    
+   opacity: 0;
+   color: snow
+  }
+  50% {
+   opacity: 1;
+   color: blanchedalmond
+  }
+  100% {
+   opacity: 0;
+   color: floralwhite;
+  }
+ }
+
+ #flicker {
+  color: #fffefe61;
+  background: -webkit-gradient(linear, left top, right top, from(#e6e6e6), to(#1d1c1c), color-stop(0.8, #ffffff)) no-repeat;
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.8, #fff)) no-repeat;
+  background-size: 110px 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: flick 1.5s infinite;
+}
+@keyframes flick {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+.mt-50 {
+  margin-top: 5rem;
+}
+.weddio-ring {
+	background-color: #fa6f6f;
+	width: 148px;
+	height: 148px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 26%;
+	z-index: 50;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+  position: absolute;
+  padding-right: calc(var(--bs-gutter-x) * .8);
+  padding-left: calc(var(--bs-gutter-x) * .8);
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  align-items: center !important;
+}
+
+.weddio-ring > img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.weddio-img {
+	overflow: hidden;
+	margin-bottom: 4.2rem;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.weddio-img img {
+	width: 100%;
+}
+.section-container {
+  margin-right: calc(var(--bs-gutter-x) * -.8);
+  margin-left: calc(var(--bs-gutter-x) * -.8);
+  padding-top: 8rem;
+  justify-content: center!important;
+  position: relative!important;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.weddio-content h5 {
+  color: #fa6f6f;
+  font-size: 1.8rem;
+  line-height: normal;
+  padding-bottom: 5px;
+  font-family: 'ReeyRegular';
+  font-weight: 400;
+  font-family: auto;
+  margin-bottom: 0;
+}
+ 
+@media screen and (max-width: 767px) {
+  .weddio-ring {
+    width: 100px;
+    height: 100px;
+    top: 0;
+  }
+  .weddio-content h5 {
+    padding: 0 0 0 6px;
+    margin-bottom: 5px;
+  }
+  .weddio-content h3 {
+    font-size: 2rem;
+  }
+  .weddio-img {
+    margin-bottom: 25px;
+}
 }
