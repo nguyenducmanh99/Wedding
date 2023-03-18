@@ -753,6 +753,9 @@ background-position:center !important;
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .event-infobox > h2 {
+    font-size: 28px;
+  }
 }
 #fh5co-gallery-list li a .case-studies-summary span {
   text-transform: uppercase;
@@ -899,12 +902,40 @@ form label {
   .hi {
     padding-top: 35rem !important
   }
+  .event-infobox > h1 {
+    padding: 0 80px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 995px) {
+ .avatar-container {
+  width: 80% !important;
+  margin: auto;
+ }
+}
+.name-style {
+  color: #fa6f6f
+}
+.cls-1 {
+  fill: none;
+  stroke: rgba(246, 11, 58, 0.724) !important;
+  stroke-width: 5;
+  stroke-dasharray: 1613, 1615;
+    stroke-dashoffset: 0;
+    stroke-miterlimit: 10;
+}
+.svg-icon {
+  position: absolute;
+  left: 10%;
+  top: 1%;
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
     font-size: 30px;
+  }
+  .event-infobox > h1 {
+    padding: 0 60px !important;
   }
 }
 #fh5co-header .display-tc h2,
@@ -1182,6 +1213,9 @@ form label {
   }
   .address {
     font-size: 14px;
+  }
+  .section-heading {
+    margin: 0 0 40px;
   }
 }
 .address {
@@ -2210,4 +2244,22 @@ form label {
  .hi {
   font-size: 60px ;
   padding-top: 50rem;
+}
+
+.amp-center {
+  font-size: 60px;
+  margin-top: 100%;
+  color: #f69d9d;
+}
+
+#fh5co-couple img {
+  margin-bottom: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* vertical-align: middle; */
 }
