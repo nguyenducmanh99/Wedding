@@ -294,16 +294,16 @@
           const the_seconds = seconds < 10 ? 0 + seconds : seconds;
 
           fullCountDown.days.amount.textContent = the_days;
-          fullCountDown.days.word.textContent = dayWord;
+          fullCountDown.days.word.textContent = "Ngày";
 
           fullCountDown.hours.amount.textContent = the_hours;
-          fullCountDown.hours.word.textContent = hourWord;
+          fullCountDown.hours.word.textContent = "Giờ";
 
           fullCountDown.minutes.amount.textContent = the_minutes;
-          fullCountDown.minutes.word.textContent = minuteWord;
+          fullCountDown.minutes.word.textContent = "Phút";
 
           fullCountDown.seconds.amount.textContent = the_seconds;
-          fullCountDown.seconds.word.textContent = secondWord;
+          fullCountDown.seconds.word.textContent = "Giây";
         }
       };
 
