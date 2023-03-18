@@ -482,6 +482,9 @@ background-position:center !important;
 .heading-title {
   font-size: 42px !important;
 }
+.w-50 {
+  width: 50%;
+}
 @media screen and (max-width: 480px) {
   .timeline:before {
     margin-left: -64px;
@@ -1236,13 +1239,26 @@ form label {
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
 }
+.head-font {
+  font-family: 'Pacifico' !important;
+  text-transform: none !important;
+}
 .fh5co-heading h2 {
   font-size: 60px;
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #fa6f6f;
+  color: chocolate;
   font-family: "Sacramento", Arial, serif;
+}
+.after-banner {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -15px;
+  height: 26px;
+  background: url(../images/2.png) no-repeat center;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
