@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-video {
-  height: 450px;
+  height: 300px;
   overflow: hidden;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -297,7 +297,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover {
-  height: 800px;
+  height: 100vh !important;
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
@@ -325,7 +325,7 @@ background-position:center !important;
 }
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
-  height: 800px;
+  height: 100vh;
   display: table;
   width: 100%;
 }
@@ -453,6 +453,9 @@ background-position:center !important;
 
 #fh5co-counter {
   height: 600px;
+}
+.full-height {
+  height: 100vh !important;
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter {
@@ -784,6 +787,15 @@ background-position:center !important;
   #fh5co-gallery-list li.one-third {
     width: 100%;
   }
+  .amp-center {
+    font-size: 60px !important;
+  }
+  .des-text {
+    font-size: 14px !important;
+}
+.sub-text {
+  font-size: 16px !important;
+}
 }
 
 #map {
@@ -796,6 +808,13 @@ background-position:center !important;
     height: 200px;
   }
 }
+@media screen and (max-width: 995px) {
+  #fh5co-couple {
+    height: 100vh;
+  }
+}
+
+
 
 .fh5co-social-icons {
   margin: 0;
@@ -898,6 +917,22 @@ form label {
     font-size: 40px;
   }
 }
+.img-responsive {
+  width: 50%;
+  margin: auto;
+}
+.sub-text {
+  color: brown;
+  font-size: 20px;
+}
+.des-text {
+  color: crimson;
+  font-size: 20px;
+  margin-top: 1rem;
+}
+figure > img {
+  width: 65%;
+}
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .hi {
     padding-top: 35rem !important
@@ -905,14 +940,42 @@ form label {
   .event-infobox > h1 {
     padding: 0 80px !important;
   }
+  .amp-center {
+    font-size: 80px !important;
+  }
+  .des-text {
+    font-size: 15px !important;
+  }
+  .img-responsive {
+    width: 90%;
+}
+.sub-text {
+  font-size: 17px !important;
+}
+}
+.avatar-container {
+  padding-top: 10rem;
 }
 @media screen and (min-width: 768px) and (max-width: 995px) {
  .avatar-container {
   width: 80% !important;
   margin: auto;
+  padding-top: 7rem;
  }
  .hi {
    font-size: 40px !important;
+ }
+ .amp-center {
+   font-size: 100px !important;
+ }
+ .img-responsive {
+   width: 80% !important
+ }
+ section {
+   height: 100vh;
+ }
+ figure > img {
+  width: 100%;
  }
 }
 .name-style {
@@ -989,6 +1052,9 @@ form label {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: .1em;
+} 
+#fh5co-services {
+  padding: 5em !important
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter .feature-center {
@@ -1017,7 +1083,9 @@ form label {
   /* The countdown */
   margin-bottom: 2em;
 }
-
+.section {
+  height: 100vh;
+}
 .simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
@@ -1177,6 +1245,9 @@ form label {
     height: 120px;
     margin: 0 auto;
   }
+  .img-responsive {
+    width: 100%;
+  }
 }
 .couple-half .groom {
   float: right;
@@ -1193,6 +1264,9 @@ form label {
 .couple-half .desc-bride {
   padding-left: 180px;
   text-align: left;
+}
+#fh5co-couple {
+  height: 100vh;
 }
 @media screen and (max-width: 480px) {
   .couple-half .groom, .couple-half .bride {
@@ -1212,13 +1286,16 @@ form label {
     margin-bottom: 15px;
   }
   figure > img {
-    margin-top: 30px;
+    width: 80%;
   }
   .address {
     font-size: 14px;
   }
   .section-heading {
-    margin: 0 0 40px;
+    margin-bottom: 30px !important;
+  }
+  .sec01 {
+    padding: 50px 0 40px !important
   }
 }
 .address {
@@ -1487,7 +1564,7 @@ form label {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #F14E95;
+  background: #fa6f6f;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1964,6 +2041,7 @@ form label {
   background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
+    height: 100vh;
 }
 
 .section-heading h2:after {
@@ -2023,7 +2101,10 @@ form label {
   color: #111111;
   margin: 0 0 15px;
 }
-
+.logo-custom {
+  position: absolute;
+  top: 0%;
+}
 .img-responsive {
   display: inline-block;
     animation-duration: 2s;
@@ -2147,6 +2228,9 @@ form label {
 .mt-50 {
   margin-top: 5rem;
 }
+.bold {
+  font-weight: bold;
+}
 .weddio-ring {
 	background-color: #fa6f6f;
 	width: 148px;
@@ -2246,12 +2330,12 @@ form label {
 
  .hi {
   font-size: 60px ;
-  padding-top: 50rem;
+  padding-top: 40rem;
 }
 
 .amp-center {
-  font-size: 60px;
-  margin-top: 100%;
+  font-size: 150px;
+  margin-top: 70%;
   color: #f69d9d;
 }
 
