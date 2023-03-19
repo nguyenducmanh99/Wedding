@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-video {
-  height: 300px;
+  height: 364px;
   overflow: hidden;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -483,7 +483,7 @@ background-position:center !important;
   font-family: 'Pacifico' !important;
 }
 .heading-title {
-  font-size: 36px !important;
+  font-size: 45px !important;
 }
 .w-50 {
   width: 50%;
@@ -799,7 +799,14 @@ background-position:center !important;
 .sub-text {
   font-size: 16px !important;
 }
+.fh5co-video {
+  float: none;
+  margin: auto;
+  width: 100%;
+  height: 400px !important;
 }
+}
+
 
 #map {
   width: 100%;
@@ -815,6 +822,9 @@ background-position:center !important;
   #fh5co-couple {
     height: 100vh;
   }
+  .fh5co-video {
+   height: 300px;
+  } 
 }
 
 
@@ -925,7 +935,7 @@ form label {
   margin: auto;
 }
 .sub-text {
-  color: brown;
+  color: brown !important;
   font-size: 20px;
 }
 .des-text {
@@ -954,6 +964,12 @@ figure > img {
 }
 .sub-text {
   font-size: 17px !important;
+}
+.fh5co-video {
+  width: 72%;
+  float: none;
+  margin: auto;
+  height: 400px !important;
 }
 }
 .avatar-container {
@@ -1370,10 +1386,7 @@ figure > img {
 }
 .after-banner {
   content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -15px;
+  margin-top: 15px;
   height: 26px;
   background: url(../images/2.png) no-repeat center;
 }
@@ -2056,7 +2069,7 @@ figure > img {
   background: url(../images/2.png) no-repeat center;
 }
 .section-heading h2 {
-  font-size: 36px;
+  font-size: 45px;
   font-weight: 400;
   color: #222;
   margin: 0;
