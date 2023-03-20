@@ -836,6 +836,12 @@ background-position:center !important;
   .fh5co-video {
    height: 300px;
   } 
+  .center-item {
+    justify-content: center;
+  }
+  .des-text{
+    margin-top: 0 !important;
+  }
 }
 
 
