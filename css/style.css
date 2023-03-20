@@ -516,6 +516,9 @@ background-position:center !important;
   .heading-title {
     font-size: 33px !important;
   }
+  #fh5co-services {
+    padding: 3em !important;
+  }
 }
 .timeline > li {
   margin-bottom: 20px;
@@ -793,9 +796,12 @@ background-position:center !important;
   .amp-center {
     font-size: 60px !important;
   }
+  .full-name {
+    font-size: 13px !important;
+  }
   .des-text {
     font-size: 14px !important;
-}
+  }
 .sub-text {
   font-size: 16px !important;
 }
@@ -818,7 +824,7 @@ background-position:center !important;
     height: 200px;
   }
 }
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 991px) {
   #fh5co-couple {
     height: 100vh;
   }
@@ -939,9 +945,13 @@ form label {
   font-size: 20px;
 }
 .des-text {
-  color: crimson;
+  color: #d5212e;
   font-size: 20px;
   margin-top: 1rem;
+}
+.full-name {
+  font-size: 19px;
+  color: #c62121;
 }
 figure > img {
   width: 65%;
@@ -959,18 +969,30 @@ figure > img {
   .des-text {
     font-size: 15px !important;
   }
+  .full-name {
+    font-size: 14px !important;
+  }
   .img-responsive {
     width: 90%;
-}
-.sub-text {
+  }
+  .sub-text {
   font-size: 17px !important;
-}
-.fh5co-video {
+  }
+  .fh5co-video {
   width: 72%;
   float: none;
   margin: auto;
   height: 400px !important;
-}
+  }
+  .heading-title {
+    font-size: 40px !important;
+  }
+  #avater-title {
+    margin-bottom: 20px;
+  }
+  .avatar-container {
+    padding-top: 10rem;
+  }
 }
 .avatar-container {
   padding-top: 10rem;
@@ -997,8 +1019,27 @@ figure > img {
   width: 100%;
  }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .fh5co-video {
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .fh5co-video {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .fh5co-video {
+    height: 550px;
+  }
+}
 .name-style {
-  color: #fa6f6f
+  color: #8D0101;
+  font-family: 'Pacifico';
 }
 .cls-1 {
   fill: none;
@@ -1073,7 +1114,7 @@ figure > img {
   letter-spacing: .1em;
 } 
 #fh5co-services {
-  padding: 5em !important
+  padding: 5em 
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter .feature-center {
@@ -2120,12 +2161,12 @@ figure > img {
   position: absolute;
   top: 0%;
 }
-.img-responsive {
+.icon-animation {
   display: inline-block;
-    animation-duration: 2s;
-    animation-delay: 300ms;
-    animation-iteration-count: infinite;
-    animation-name: pulse;
+  animation-duration: 1s;
+  animation-delay: 100ms;
+  animation-iteration-count: infinite;
+  animation-name: pulse;
 }
 .btgbtn {
   text-shadow: none;
