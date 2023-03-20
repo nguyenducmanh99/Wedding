@@ -524,6 +524,10 @@ background-position:center !important;
   #fh5co-services {
     padding: 3em !important;
   }
+  .invite-text {
+    width: 90%;
+    margin: auto;
+  }
 }
 .timeline > li {
   margin-bottom: 20px;
@@ -956,13 +960,14 @@ form label {
   font-size: 20px;
 }
 .des-text {
-  color: #d5212e;
+  font-style: italic;
   font-size: 20px;
   margin-top: 1rem;
 }
 .full-name {
   font-size: 19px;
-  color: #c62121;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 figure > img {
   width: 65%;
@@ -982,7 +987,8 @@ figure > img {
     font-size: 15px !important;
   }
   .full-name {
-    font-size: 14px !important;
+    font-size: 17px !important;
+    font-weight: 600;
   }
   .img-responsive {
     width: 90%;
@@ -1050,7 +1056,6 @@ figure > img {
   }
 }
 .name-style {
-  color: #8D0101;
   font-family: 'Pacifico';
 }
 .cls-1 {
@@ -1358,7 +1363,9 @@ figure > img {
     margin-bottom: 15px;
   }
   figure > img {
-    width: 80%;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
   }
   .address {
     font-size: 14px;
@@ -2106,7 +2113,7 @@ figure > img {
   padding: 100px 0;
   display: block;
   box-sizing: border-box;
-  background-image: url(https://media.istockphoto.com/id/1335074792/photo/gypsophila-background-copy-space-pastel-colors-top-view-flat-layout-template-card-design.jpg?b=1&s=170667a&w=0&k=20&c=v7dgnoYGVyGb6jMgocxqLj2nXAbavPbWbBCLlnPm9Sc=);
+  background-color: #FFF4EA;
   background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
@@ -2131,7 +2138,7 @@ figure > img {
   padding-bottom: 45px;
 }
 .event-area .event-infobox h2 {
-  font-family: "Kaushan Script", cursive;
+  font-family: 'Work Sans';
   font-weight: 400;
   color: brown;
 }
