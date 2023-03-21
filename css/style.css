@@ -1152,7 +1152,22 @@ figure > img {
     height: calc(100vh - 0px) !important;
     padding: 12rem 0 !important;
   }
-  
+  .avatar-container {
+    padding-top: 13rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .avatar-container {
+    padding-top: 5rem;
+  }
+  .nopadding {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .avatar-container {
+    padding-top: 0rem;
+  }
 }
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
