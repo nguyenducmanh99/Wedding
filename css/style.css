@@ -101,6 +101,12 @@ h1, h2, h3, h4, h5, h6, figure {
     height: 100vh !important;
   }
 }
+@media screen and (max-width: 767px) {
+  #btn-donate {
+    margin-top: 12px;
+  }
+}
+
 .fh5co-nav #fh5co-logo {
   font-size: 30px;
   margin: 0;
@@ -821,7 +827,11 @@ background-position:center !important;
   height: 400px !important;
 }
 }
-
+.sub-day {
+  display: inline ;
+  font-size: 22px ;
+  color: crimson ;
+}
 
 #map {
   width: 100%;
@@ -972,6 +982,12 @@ form label {
 figure > img {
   width: 65%;
 }
+.clearfix {
+  font-style: italic;
+  margin-top: 5%;
+  font-size: 13px;
+  font-weight: bold;
+}
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .hi {
     padding-top: 75% !important;
@@ -1015,6 +1031,12 @@ figure > img {
 .avatar-container {
   padding-top: 10rem;
 }
+@media screen and (min-width: 480px) {
+  .event-img figure {
+    padding: 0 0px !important;
+  
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 995px) {
  .avatar-container {
   width: 80% !important;
@@ -1037,7 +1059,20 @@ figure > img {
   width: 100%;
  }
 }
-
+@media screen and (min-width: 768px) {
+  #fh5co-couple {
+    height: calc(100vh - 250px) !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .event-title {
+    font-size: 30px;
+    margin-bottom: 1.2rem;
+  }
+  #fh5co-couple {
+    height: calc(100vh - 150px) !important;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .fh5co-video {
     height: 450px;
@@ -1093,6 +1128,9 @@ figure > img {
   #fh5co-counter .display-tc h2,
   .fh5co-cover .display-tc h2 {
     font-size: 16px;
+  }
+  #fh5co-couple {
+    height: calc(100vh - 160px) !important;
   }
 }
 #fh5co-header .display-tc .btn,
@@ -2425,3 +2463,71 @@ figure > img {
   height: auto;
   /* vertical-align: middle; */
 }
+
+.donate-modal {
+  display: none; 
+  position: fixed;
+  z-index: 999999;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.5);
+}
+.donate-modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+max-width: 750px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetopfordonatemodal;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetopfordonatemodal;
+  animation-duration: 0.4s
+}
+
+.donate-modal strong, .donate-modal h3{font-family:inherit!important;}
+.donate-modal-close {color: white;float: right;font-size: 28px;font-weight: bold;text-decoration: none;cursor: pointer;}
+.donate-modal-header {padding: 8px 16px;background-color: #f23b43;color: #fff;font-size:30px;text-align:center;line-height: 40px;}
+.donate-modal-header strong{display:flex;align-items:center;justify-content: center;flex-wrap: wrap;color:#fff;}
+
+.donate-modal-header strong span{margin-left:10px;}
+.donate-modal-body {padding: 0 15px;}
+.donate-box .cryptos-box-view {display:none;position: absolute;top: 0;left: 0;background: #ffffff;width: 100%;height: 100%;border-radius: 7px;padding:10px;text-align: center;}
+.donate-box .cryptos-box-view h5 {font-weight: bold;font-size: 18px;display: flex;align-items: center;justify-content: center;margin-bottom: 15px;}
+.donate-box .cryptos-box-view h5 img{width:25px;}
+.donate-box .cryptos-box-view h5 .coin-img {margin-right: 5px;}
+.donate-box .cryptos-box-view h5 .coin-id {margin-left: 5px;}
+.donate-box .cryptos-box-view .coin-address {display: block;padding: 10px;background: #ffe2e4;margin-bottom: 15px;word-break: break-word;color: #201f1f;}
+.donate-box .cryptos-box-view .cryptos-box-view-close {margin-top: 15px;background: #f23b43;color: #fff;padding: 5px 15px;border-radius: 5px;border: 1px solid #e3252d;}
+.donate-box .cryptos-box-view .cryptos-box-view-close:hover{background: #e3252d;}
+.donate-box{display: flex;justify-content: space-evenly;flex-wrap: wrap;}
+.donate-box .donate-card{width: calc(50% - 40px);margin: 20px;padding: 20px;border: 3px solid #f23b43;border-radius: 10px;}
+.donate-box .donate-card:hover{box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+.donate-box .donate-card h3{padding:0;margin:0;margin-bottom: 20px;font-weight: bold;font-size: 18px;line-height: 30px;}
+.donate-box .donate-card p {margin: 10px 0!important;font-size: 16px;}
+.donate-box .donate-card p:last-child {margin-bottom:0!important;}
+@media (max-width: 699px) {
+  .donate-box .donate-card{width:100%;margin: 20px 5px;}
+}
+.donate-box .donate-card {position:relative;}
+.donate-box .donate-card .qr-code-image{max-width: 250px;border: 1px solid #ccc;padding: 3px;margin: auto;display: block;}
+.donate-box .cryptos-box {border-top: 1px solid #f23b43;margin-top: 25px;}
+.donate-box .cryptos-box h4 {margin: 0;margin-top: 20px;text-align: center;}
+.donate-box .cryptos-box .cryptos-items {display: flex;flex-wrap: wrap;justify-content: center;margin-right: -10px;margin-left: -10px;margin-top: 10px;}
+.donate-box .cryptos-box .cryptos-items .crypto-item {padding:10px 10px 0;}
+.donate-box .cryptos-box .cryptos-items .crypto-item img {width:50px;max-width:100%;min-width:35px;cursor:pointer;}
+.donate-box .cryptos-box-view {display:none;position: absolute;top: 0;left: 0;background: #ffffff;width: 100%;height: 100%;border-radius: 7px;padding:10px;text-align: center;}
+.donate-box .cryptos-box-view h5 {font-weight: bold;font-size: 18px;display: flex;align-items: center;justify-content: center;margin-bottom: 15px;}
+.donate-box .cryptos-box-view h5 img{width:25px;}
+.donate-box .cryptos-box-view h5 .coin-img {margin-right: 5px;}
+.donate-box .cryptos-box-view h5 .coin-id {margin-left: 5px;}
+.donate-box .cryptos-box-view .coin-address {display: block;padding: 10px;background: #ffe2e4;margin-bottom: 15px;word-break: break-word;color: #201f1f;}
+.donate-box .cryptos-box-view .cryptos-box-view-close {margin-top: 15px;background: #f23b43;color: #fff;padding: 5px 15px;border-radius: 5px;border: 1px solid #e3252d;}
+.donate-box .cryptos-box-view .cryptos-box-view-close:hover{background: #e3252d;}

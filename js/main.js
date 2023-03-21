@@ -1,5 +1,31 @@
 (function () {
   "use strict";
+  
+  if ($("#donate-modal").length && $(".buttonDonate").length  && $(".donate-modal-close").length) {
+		$(document).on('click','.buttonDonate',function(){
+			$("#donate-modal").show();
+		});
+		$(document).on('click','.donate-modal-close',function(){
+			$("#donate-modal").hide();
+		});
+		$(document).on('click','body',function(e){
+			if(e.target.id == $("#donate-modal").attr('id')) { $("#donate-modal").hide(); }
+		});
+	}
+	
+	$(document).on('click', '#donate-modal .crypto-item', function(){
+		let parent = $(this).parents('.donate-card');
+		parent.find('.cryptos-box-view').show();
+		parent.find('.cryptos-box-view .coin-img').html('<img src="'+$(this).data('img')+'" />');
+		parent.find('.cryptos-box-view .coin-id').html($(this).data('id'));
+		parent.find('.cryptos-box-view .coin-address').html($(this).data('address'));
+		parent.find('.cryptos-box-view .coin-qr-code').html('').qrcode({width: 160,height: 160,text: $(this).data('address')});
+	});
+	
+	$(document).on('click', '#donate-modal .cryptos-box-view-close', function(){
+		let parent = $(this).parents('.donate-card');
+		parent.find('.cryptos-box-view').hide();
+	});
 
   var mobileMenuOutsideClick = function () {
     $(document).click(function (e) {
