@@ -1115,6 +1115,9 @@ figure > img {
   .event-infobox > h1 {
     padding: 0 60px !important;
   }
+  .event-img figure {
+    padding: 0 0px !important;
+  }
 }
 #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h2,
@@ -1485,8 +1488,8 @@ figure > img {
 .after-banner {
   content: '';
   margin-top: 15px;
-  height: 26px;
-  background: url(../images/2.png) no-repeat center;
+  height: 50px;
+  background: url(../images/flower1.png) no-repeat center;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
@@ -2164,7 +2167,7 @@ figure > img {
   right: 0;
   bottom: 0;
   height: 26px;
-  background: url(../images/2.png) no-repeat center;
+  background: url(../images/flower1.png) no-repeat center;
 }
 .section-heading h2 {
   font-size: 45px;
