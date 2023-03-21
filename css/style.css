@@ -991,7 +991,9 @@ form label {
   font-weight: 600;
 }
 figure > img {
-  width: 65%;
+  width: 80%;
+  border-radius: 10px;
+  border: 3px solid white;
 }
 .clearfix {
   font-style: italic;
@@ -1036,11 +1038,14 @@ figure > img {
     margin-bottom: 20px;
   }
   .avatar-container {
-    padding-top: 10rem;
+    padding-top: 7rem !important;
+  }
+  #fh5co-couple {
+    height: calc(100vh - 0px) !important;
   }
 }
 .avatar-container {
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 @media screen and (min-width: 480px) {
   .event-img figure {
@@ -1052,7 +1057,7 @@ figure > img {
  .avatar-container {
   width: 80% !important;
   margin: auto;
-  padding-top: 7rem;
+  padding-top: 4rem;
  }
  .hi {
    font-size: 40px !important;
@@ -1072,7 +1077,7 @@ figure > img {
 }
 @media screen and (min-width: 768px) {
   #fh5co-couple {
-    height: calc(100vh - 250px) !important;
+    height: calc(100vh - 0px) !important;
   }
 }
 @media screen and (min-width: 992px) {
@@ -1081,7 +1086,7 @@ figure > img {
     margin-bottom: 1.2rem;
   }
   #fh5co-couple {
-    height: calc(100vh - 150px) !important;
+    height: calc(100vh - 50px) !important;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1144,8 +1149,10 @@ figure > img {
     font-size: 16px;
   }
   #fh5co-couple {
-    height: calc(100vh - 160px) !important;
+    height: calc(100vh - 0px) !important;
+    padding: 12rem 0 !important;
   }
+  
 }
 #fh5co-header .display-tc .btn,
 #fh5co-counter .display-tc .btn,
@@ -1445,8 +1452,8 @@ figure > img {
     margin-bottom: 50px;
   }
   figure > img {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 .feature-center .icon {
@@ -1499,8 +1506,8 @@ figure > img {
 .after-banner {
   content: '';
   margin-top: 15px;
-  height: 50px;
-  background: url(../images/flower1.png) no-repeat center;
+  height: 110px;
+  background: url(../images/flower3.png) no-repeat center;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
@@ -2162,7 +2169,7 @@ figure > img {
 
 .event-area {
   position: relative;
-  padding: 100px 0;
+  padding: 70px 0;
   display: block;
   box-sizing: border-box;
   background-color: #FFF4EA;
@@ -2171,15 +2178,15 @@ figure > img {
     background-position: center center !important;
 }
 
-.section-heading h2:after {
+/* .section-heading h2:after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 26px;
-  background: url(../images/flower1.png) no-repeat center;
-}
+  height: 110px;
+  background: url(../images/flower3.png) no-repeat center;
+} */
 .section-heading h2 {
   font-size: 45px;
   font-weight: 400;
@@ -2187,7 +2194,7 @@ figure > img {
   margin: 0;
   text-transform: uppercase;
   position: relative;
-  padding-bottom: 45px;
+  padding-bottom: 0px;
 }
 .event-area .event-infobox h2 {
   font-family: 'Work Sans';
