@@ -541,6 +541,10 @@ background-position:center !important;
     width: 90%;
     margin: auto;
   }
+  .donate-box .donate-card .qr-code-image {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
 }
 .timeline > li {
   margin-bottom: 20px;
