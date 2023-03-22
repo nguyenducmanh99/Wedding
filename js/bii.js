@@ -22,7 +22,7 @@ audioPlayer.style.display = "none";
 
 setTimeout(function(){
 	if (audioPlayer.canPlayType("audio/mpeg")) {
-		audioPlayer.setAttribute("src", "images/ido.mp3");
+		audioPlayer.setAttribute("src", "../images/ido.mp3");
 		document.getElementsByClassName("bii-player")[0].style.display = "block";
 	}
 	audioPlayer.volume = 1.0;
@@ -42,18 +42,7 @@ var myInterval = setInterval(function(){
 	}
 }, 200);
 
-function playPause() {
-	document.getElementsByClassName("bii-player")[0].classList.remove("show-sec");
-	if (audioPlayer.paused) {
-		audioPlayer.play();
-		document.getElementById("playerVolumeOff").style.display = "none";
-		document.getElementById("playerVolumeOn").style.display = "block";
-	} else {
-		audioPlayer.pause(); 
-		document.getElementById("playerVolumeOff").style.display = "block";
-		document.getElementById("playerVolumeOn").style.display = "none";
-	}
-}
+
 document.write(`
 <style type="text/css">
 @-webkit-keyframes biilogo-pulse {

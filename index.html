@@ -497,6 +497,18 @@
     <script src="js/main.js"></script>
 
     <script>
+        function playPause() {
+	document.getElementsByClassName("bii-player")[0].classList.remove("show-sec");
+	if (audioPlayer.paused) {
+		audioPlayer.play();
+		document.getElementById("playerVolumeOff").style.display = "none";
+		document.getElementById("playerVolumeOn").style.display = "block";
+	} else {
+		audioPlayer.pause(); 
+		document.getElementById("playerVolumeOff").style.display = "block";
+		document.getElementById("playerVolumeOn").style.display = "none";
+	}
+}
         var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
         console.log("Version 1.0.2 === 15h10/22/3")
         // default example
