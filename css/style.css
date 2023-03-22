@@ -504,6 +504,22 @@ background-position:center !important;
 .w-50 {
   width: 50%;
 }
+
+@media screen and (min-width: 1180px) and (min-height: 800px) {
+  .avatar-container {
+    padding-top: 10rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .avatar-container {
+    padding-top: 15% !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .avatar-container {
+    padding-top: 10% !important;
+  }
+}
 @media screen and (max-width: 480px) {
   .timeline:before {
     margin-left: -64px;
@@ -1003,7 +1019,7 @@ figure > img {
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .hi {
-    padding-top: 75% !important;
+    padding-top: 80% !important;
     padding-bottom: 5%;
   }
   .event-infobox > h1 {
@@ -1038,7 +1054,7 @@ figure > img {
     margin-bottom: 20px;
   }
   .avatar-container {
-    padding-top: 7rem !important;
+    padding-top: 30% !important;
   }
   #fh5co-couple {
     height: calc(100vh - 0px) !important;
@@ -1164,7 +1180,7 @@ figure > img {
     padding: 0;
   }
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1180px) and (max-height: 800px) {
   .avatar-container {
     padding-top: 0rem;
   }
@@ -2477,9 +2493,9 @@ figure > img {
    }
  }
 
- .hi {
+.hi {
   font-size: 60px ;
-  padding-top: 40rem;
+  padding-top: 75%;
 }
 
 .amp-center {
